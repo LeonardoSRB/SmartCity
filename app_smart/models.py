@@ -4,7 +4,7 @@ class Sensor(models.Model):
     TIPOS_SENSOR_CHOICES = [
         ("Temperatura", "Temperatura"),
         ("Umidade", "Umidade"),
-        ("Contador", "Contador")
+        ("Contador", "Contador"),
         ("Luminosidade", "Luminosidade"),
     ]
     tipo = models.CharField(max_length=50, choices=TIPOS_SENSOR_CHOICES)
@@ -13,7 +13,7 @@ class Sensor(models.Model):
     longitude = models.FloatField()
     localizacao = models.CharField(max_length=100)
     responsavel = models.CharField(max_length=100)
-
+    observacao = models.TextField(blank=True) 
     unidade_medida = models.CharField(max_length=20, blank=True, null=True)
     status_operacional = models.BooleanField(default=True)
     def str (self):
