@@ -55,7 +55,7 @@ REST_FRAMEWORK ={
 CORS_ALLOW_ALL_ORIGINS = True
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN LIFETIME': timedelta(minutes=15),
+    'ACCESS_TOKEN LIFETIME': timedelta(minutes=100),
     # Define o tempo de expiração do token JWT. Padrão é 5 minutos
     'REFRESH TOKEN LIFETIME': timedelta(days=7),
     # Define o tempo de expiração do refresh toke. Padrão é de 30 dias
@@ -128,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

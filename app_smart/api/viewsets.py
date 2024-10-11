@@ -3,9 +3,9 @@ from rest_framework import generics, permissions
 from app_smart.api import serializers
 from rest_framework.response import Response
 from rest_framework import status
-from ..models import Sensor 
+from ..models import Sensor, TemperaturaData 
 from rest_framework import viewsets
-from app_smart.api.filters import SensorFilter
+from app_smart.api.filters import SensorFilter, TemperaturaDataFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
 class CreateUserAPIViewSet (generics.CreateAPIView):
@@ -22,3 +22,10 @@ class SensorViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
     filterset_class = SensorFilter
+
+class TemperaturaDataViewSet(viewsets.ModelViewSet):
+    queryset = TemperaturaData.objects.all()
+    serializer_class = serializers.TemperaturaDataSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = TemperaturaDataFilter

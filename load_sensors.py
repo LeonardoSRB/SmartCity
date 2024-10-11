@@ -9,7 +9,7 @@ from app_smart.models import Sensor
 
 def load_sensors_from_csv(file_path):
     with open(file_path, newline='', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=';')
+        reader = csv.DictReader(csvfile, delimiter=',')
 
         for row in reader:
             Sensor.objects.create(
@@ -29,3 +29,4 @@ if __name__ == "__main__":
     #Caminho para o arquivo CSV
     file_path = 'dados/sensores.csv'
     load_sensors_from_csv(file_path)
+
