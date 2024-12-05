@@ -1,0 +1,45 @@
+
+#div_tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabela_umidade {
+    border-style: solid;
+    border-color: #5271ff;
+    border-width: 10px;
+}
+
+#titulo_umidade {
+    display: flex;
+    align-items: center;
+    color: #5271ff;
+    font-size: 42px;
+}
+
+
+#corpo_tabela td {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    width: 300px;
+    font-size: 16px;
+}
+
+#cabeca_tabela_umidade {
+    color: #5271ff;
+    font-size: 22px;
+}
+
+#umidade_logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+
+#umidade_logo img {
+    height: 150px;
+
+}
