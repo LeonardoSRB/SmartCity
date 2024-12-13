@@ -1,0 +1,9 @@
+-- database: ./db.sqlite3
+
+SELECT * FROM app_smart_temperaturadata;
+
+UPDATE app_smart_temperaturadata
+SET sensor_id = 4;
+
+UPDATE app_smart_contadordata
+SET sensor_id = 

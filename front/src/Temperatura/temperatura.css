@@ -1,0 +1,49 @@
+
+body {
+    background-color: #8fd2ff;
+}
+
+#div_tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabela_temperatura {
+    border-style: solid;
+    border-color: #ff3131;
+    border-width: 10px;
+}
+
+#titulo_temperatura {
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 42px;
+}
+
+
+#corpo_tabela td {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    width: 300px;
+    font-size: 16px;
+}
+
+#cabeca_tabela_temperatura {
+    color: red;
+    font-size: 22px;
+}
+
+#temperatura_logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+}
+
+#temperatura_logo img {
+    height: 150px;
+
+}

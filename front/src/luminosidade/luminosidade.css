@@ -1,0 +1,62 @@
+
+body {
+    background-color: #8fd2ff;
+}
+
+#div_tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabela_luminosidade {
+    border-style: solid;
+    border-color: #f4bc33;
+    border-width: 10px;
+}
+
+#titulo_luminosidade {
+    display: flex;
+    align-items: center;
+    color: #f4bc33;
+    font-size: 42px;
+}
+
+
+#corpo_tabela td {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    width: 300px;
+    font-size: 16px;
+}
+
+#cabeca_tabela_luminosidade {
+    color: #f4bc33;
+    font-size: 22px;
+}
+
+#luminosidade_logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 230px;
+}
+
+#luminosidade_logo img {
+    height: 150px;
+
+}
+
+.voltar {
+    background-color: #4095ce;
+    color: black;
+}
+
+.botao_voltar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+
+}

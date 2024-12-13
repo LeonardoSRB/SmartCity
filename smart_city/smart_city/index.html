@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste API</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById('userForm').addEventListener('submit',
+            function(event) {
+                event.preventDefault();
+                var username = document.getElementById('username').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var formData = new FormData();
+                formData.append('username', username);
+                formData.append('email', email);
+                formData.append('password', password);
+                axios.post('/api/create_user/', formData, {
+                    headers: {
+                        'Authorization': 'Basic' + btoa('smart_user:123456')
+                    }
+                })
+                .then(response => {
+                    alert('Usuário cadastrado com sucesso!');
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao cadastrar usuário');
+                });
+            });
+    </script>
+</body>
+</html>
